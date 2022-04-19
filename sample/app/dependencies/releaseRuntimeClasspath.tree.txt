@@ -1,0 +1,23 @@
+
+------------------------------------------------------------
+Project ':sample:app'
+------------------------------------------------------------
+
+releaseRuntimeClasspath - Resolved configuration for runtime for variant: release
+\--- project :sample:module1
+     +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10
+     |    +--- org.jetbrains.kotlin:kotlin-stdlib:1.6.10
+     |    |    +--- org.jetbrains:annotations:13.0
+     |    |    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.6.10
+     |    \--- org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.6.10
+     |         \--- org.jetbrains.kotlin:kotlin-stdlib:1.6.10 (*)
+     \--- project :sample:module2
+          +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.6.10 (*)
+          \--- org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2
+               \--- org.jetbrains.kotlinx:kotlinx-coroutines-core-jvm:1.5.2
+                    +--- org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30 -> 1.6.10 (*)
+                    \--- org.jetbrains.kotlin:kotlin-stdlib-common:1.5.30 -> 1.6.10
+
+(*) - dependencies omitted (listed previously)
+
+A web-based, searchable dependency report is available by adding the --scan option.
